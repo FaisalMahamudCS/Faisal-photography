@@ -1,0 +1,23 @@
+[
+    {
+      "id":"1",
+      "name":"Portrait Photography",
+      "image":"https://images.unsplash.com/photo-1571755456748-8d03ec53cca3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "description": "I will do portrait photography for you"
+
+    },
+    {
+        "id":"2",
+        "name":"Familly Photography",
+        "image":"https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "description":"I will do photography for your whole familly"
+  
+      },
+      {
+        "id":"3",
+        "name":"Fashion Photography",
+        "image":"https://images.unsplash.com/photo-1599751449128-eb7249c3d6b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+        "description":"I will do fashion photography for you"
+  
+      }
+]
