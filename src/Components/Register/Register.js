@@ -9,12 +9,14 @@ import auth from '../../firebase.init';
 const Register = () => {
     const emailRef=useRef('');
     const passwordRef=useRef('');
+    let registerError;
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth ,{sendEmailVerification:true});
+    //mail varification
     console.log(auth);
    
     const navigate = useNavigate();
@@ -24,9 +26,7 @@ const Register = () => {
     }
 
     
-    if (user) {
-     console.log('user', user);  
-    }
+   
 
     const handleRegister = async (event) => {
         event.preventDefault();
@@ -34,12 +34,13 @@ const Register = () => {
         const password=passwordRef.current.value;
    
     
-
+        
         await createUserWithEmailAndPassword(email, password);
-    
-       
         navigate('/');
+       
+    
     }
+   
 
     return (
         <div className='container'>
@@ -61,9 +62,10 @@ const Register = () => {
 <Form.Check type="checkbox" label="Check me out" />
 </Form.Group>
 <Button variant="primary" type="submit">
-Submit
+Register
 </Button>
 </Form>
+
 <Link to='/register'>Alrady have account? Login Now</Link>
     </div>
     );
