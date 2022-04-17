@@ -40,6 +40,12 @@ const Header = () => {
           to='/about'
         >About
             </NavLink>
+            <NavLink
+           className={({ isActive }) => (isActive ? "nav-link   text-success" : "nav-link text-dark")}
+          to='/service'
+        >Service
+            </NavLink>
+
    {
      user ?
      <button className='btn btn-link text-dark text-decoration-none' onClick={handleSignOut}>Sign out</button>

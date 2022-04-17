@@ -34,7 +34,7 @@ const Login = () => {
   const email=emailRef.current.value;
   await sendPasswordResetEmail(email);
  // alert("password reset")
- 
+ //toast added
  toast(" Reset Password Sent");
 
  }

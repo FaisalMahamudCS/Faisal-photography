@@ -1,7 +1,6 @@
 import React from 'react';
 
-const Work = () => {
-    const []=useSta
+const Blog = () => {
     return (
         <div>
             
@@ -9,4 +8,4 @@ const Work = () => {
     );
 };
 
-export default Work;
+export default Blog;
