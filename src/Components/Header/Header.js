@@ -32,8 +32,8 @@ const Header = () => {
      
             <NavLink
             className={({ isActive }) => (isActive ? "nav-link   text-success " : "nav-link text-dark")}
-          to='/blogs'
-        >Blogs
+          to='/blog'
+        >Blog
             </NavLink>
             <NavLink
            className={({ isActive }) => (isActive ? "nav-link   text-success" : "nav-link text-dark")}
