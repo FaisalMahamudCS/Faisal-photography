@@ -1,9 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { signOut } from 'firebase/auth';
 import { Link } from 'react-router-dom';
 import { Nav, Navbar} from 'react-bootstrap';
+import auth from '../../firebase.init';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 const Header = () => {
+  const [user]=useAuthState(auth);
+  const handleSignOut =()=>{
+    signOut(auth);
+  }
     return (
         <div>
  
@@ -33,6 +40,22 @@ const Header = () => {
           to='/about'
         >About
             </NavLink>
+   {
+     user ?
+     <button className='btn btn-link text-dark text-decoration-none' onClick={handleSignOut}>Sign out</button>
+    :
+    <NavLink
+    className={({ isActive }) => (isActive ? "nav-link   text-success" : "nav-link text-dark")}
+   to='/login'
+ >Login
+     </NavLink>
+   }
+            
+           
+
+            
+         
+
          
       </div>
     </div>
