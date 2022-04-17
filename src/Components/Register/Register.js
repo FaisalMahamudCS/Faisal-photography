@@ -14,7 +14,7 @@ const Register = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth ,{sendEmailVerification:true});
     console.log(auth);
    
     const navigate = useNavigate();
@@ -38,7 +38,7 @@ const Register = () => {
         await createUserWithEmailAndPassword(email, password);
     
        
-        navigate('/home');
+        navigate('/');
     }
 
     return (

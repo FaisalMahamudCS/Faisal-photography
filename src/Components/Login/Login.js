@@ -9,20 +9,20 @@ const Login = () => {
     const navigate = useNavigate();
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
-
+//sign in destructuring
     const [
       signInWithEmailAndPassword,
       user,
       loading,
       error,
   ] = useSignInWithEmailAndPassword(auth);
-
+//going to home when user exist
   if(user){
     navigate(from, { replace: true });
   }
-
+//reset password
  const resetPassword =()=>{
-   
+
  }
 
     const handleSubmit = event=>{
@@ -55,7 +55,7 @@ const Login = () => {
     Submit
   </Button>
 </Form>
-<Link to='/register'>New? Register Now</Link>
+<Link className='btn btn-link text-primary pe-auto text-decoration-none' to='/register'>New? Register Now</Link>
 <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> 
         </div>
     );
