@@ -18,7 +18,7 @@ const Blog = () => {
                  Superbase is also a alternative.it is open source.</p>  
 
                <h4>What other service firebase provide other than Authentication</h4>
-               Firebase provide hosting for mobile ,ios ,web app.user can   
+               Firebase provide hosting for mobile ,ios ,web app.user ca  
             
         </div>
     );
