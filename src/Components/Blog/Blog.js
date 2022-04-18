@@ -18,7 +18,10 @@ const Blog = () => {
                  Superbase is also a alternative.it is open source.</p>  
 
                <h4>What other service firebase provide other than Authentication</h4>
-               Firebase provide hosting for mobile ,ios ,web app.user ca  
+               Firebase provide hosting for mobile ,ios ,web app.Firebase also provide realtime database features.
+           We can make serverless web app using firebase.Firebase provide cloud messaging feature.Firebase also provide Firebase 
+           ML .We can access Machine learning feature and easily use it.Firebase provide cloud storage feature for app.
+           
             
         </div>
     );

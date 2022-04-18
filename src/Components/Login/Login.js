@@ -53,15 +53,13 @@ if (error) {
         }
     }
     return (
-        <div className='container'>
+        <div className='container w-25 mx-auto card'>
             
             <Form onSubmit={handleSubmit}>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
     <Form.Control type="email" ref={emailRef} placeholder="Enter email"  required/>
-    <Form.Text className="text-muted">
-      We'll never share your email with anyone else.
-    </Form.Text>
+   
   </Form.Group>
 
   <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -71,15 +69,16 @@ if (error) {
   <Form.Group className="mb-3" controlId="formBasicCheckbox">
     <Form.Check type="checkbox" label="Check me out" />
   </Form.Group>
-  <Button variant="primary" type="submit">
+  <Button variant="dark" type="submit">
     Login
   </Button>
 {errormsg}
 </Form>
-<Link className='btn btn-link text-primary pe-auto text-decoration-none' to='/register'>New? Register Now</Link>
-<button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> 
+<Link className='btn btn-link text-dark pe-auto text-decoration-none' to='/register'>New? Register Now</Link>
+<button className='btn btn-link text-dark pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button>
+<SocialLogin></SocialLogin>   
 <ToastContainer />
-<SocialLogin></SocialLogin>      
+    
 </div>
       
     );
