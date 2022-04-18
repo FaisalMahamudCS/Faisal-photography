@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { Nav, Navbar} from 'react-bootstrap';
 import auth from '../../firebase.init';
 import { useAuthState } from 'react-firebase-hooks/auth';
-
+import './Header.css'
 const Header = () => {
   const [user]=useAuthState(auth);
   const handleSignOut =()=>{
@@ -14,7 +14,7 @@ const Header = () => {
     return (
         <div>
  
-<nav className="navbar navbar-expand-lg navbar-light d-flex justify-content-center">
+<nav className="navbar navbar-expand-lg  head  d-flex justify-content-center">
 
   <div className=" ">
     
@@ -24,34 +24,34 @@ const Header = () => {
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav">
       <NavLink
-          className={({ isActive }) => (isActive ? "nav-link text-success" : "nav-link text-dark")}
+          className={({ isActive }) => (isActive ? "nav-link  text-warning" : "nav-link text-light")}
           to='/'
         >Faisal Photography
             </NavLink>
 
      
             <NavLink
-            className={({ isActive }) => (isActive ? "nav-link   text-success " : "nav-link text-dark")}
+            className={({ isActive }) => (isActive ? "nav-link    text-warning" : "nav-link text-white")}
           to='/blog'
         >Blog
             </NavLink>
             <NavLink
-           className={({ isActive }) => (isActive ? "nav-link   text-success" : "nav-link text-dark")}
+           className={({ isActive }) => (isActive ? "nav-link   text-warning" : "nav-link text-white")}
           to='/about'
         >About
             </NavLink>
             <NavLink
-           className={({ isActive }) => (isActive ? "nav-link   text-success" : "nav-link text-dark")}
+           className={({ isActive }) => (isActive ? "nav-link    text-warning" : "nav-link text-white")}
           to='/service'
         >Service
             </NavLink>
 
    {
      user ?
-     <button className='btn btn-link text-dark text-decoration-none' onClick={handleSignOut}>Sign out</button>
+     <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>Sign out</button>
     :
     <NavLink
-    className={({ isActive }) => (isActive ? "nav-link   text-success" : "nav-link text-dark")}
+    className={({ isActive }) => (isActive ? "nav-link    text-warning" : "nav-link text-white")}
    to='/login'
  >Login
      </NavLink>

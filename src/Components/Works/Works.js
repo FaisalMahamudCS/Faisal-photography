@@ -4,9 +4,9 @@ import './Works.css'
 const Works = (props) => {
     const {id,picture}=props.work;
     return (
-        <div className=''>
+        <div className='col container'>
             <div className=''>
-            <img src={picture} className=' ' alt="" srcset="" />
+            <img src={picture} className='img-fluid' alt="" srcset="" />
             </div>
         </div>
     );

@@ -1,11 +1,47 @@
 import React from 'react';
+import { Carousel } from 'react-bootstrap';
 
 const Banner = () => {
     return (
-        <div>
-<img src="https://img.freepik.com/free-photo/groom-putting-ring-bride-s-finger_1157-338.jpg?t=st=1650260929~exp=1650261529~hmac=d288fa86ef3c886ec804bf7af463eb5924f640644db34d1694afd9fbeeae379a&w=740"
-className='w-100'
-alt="" />        </div>
+        <div className='w-100'>
+           
+            
+            <Carousel>
+  <Carousel.Item interval={1000}>
+    <img
+      className="d-block w-100"
+      src="https://i.ibb.co/3kT7Nr4/277112099-1626443691066207-6979254937605219314-n.jpg"
+      alt="First slide"
+    />
+    <Carousel.Caption>
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item interval={500}>
+    <img
+      className="d-block w-100"
+      src="https://i.ibb.co/3kT7Nr4/277112099-1626443691066207-6979254937605219314-n.jpg"
+      alt="Second slide"
+    />
+    <Carousel.Caption>
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="https://i.ibb.co/3kT7Nr4/277112099-1626443691066207-6979254937605219314-n.jpg"
+      alt="Third slide"
+    />
+    <Carousel.Caption>
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+            </div>
     );
 };
 

@@ -1,24 +1,24 @@
 [
     {
       "id":"1",
-      "name":"Portrait Photography",
+      "name":"Wedding Photography",
       "price":"$300",
-      "image":"https://images.unsplash.com/photo-1571755456748-8d03ec53cca3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "description": "I will do portrait photography for you"
+      "image":"https://i.ibb.co/545D52G/portfolio.jpg",
+      "description": "I will do wedding  photography for you"
 
     },
     {
         "id":"2",
-        "name":"Familly Photography",
-        "image":"https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "name":"Engagement  Photography",
+        "image":"https://i.ibb.co/7zC7Jsn/engagement.jpg",
         "price":"$450",
-        "description":"I will do photography for your whole familly"
+        "description":"I will do Engagement photography for you"
   
       },
       {
         "id":"3",
         "name":"Fashion Photography",
-        "image":"https://images.unsplash.com/photo-1599751449128-eb7249c3d6b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+        "image":"https://i.ibb.co/QpTBZnk/video-photography.jpg",
         "price":"$500",
         "description":"I will do fashion photography for you"
   
