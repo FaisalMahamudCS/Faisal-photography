@@ -8,9 +8,11 @@ import Loading from '../Loading/Loading';
 const RequireAuth = ({children}) => {
    const [user,loading]=useAuthState(auth);
    const location =useLocation();
+   //error handle
 if(loading){
     return <Loading></Loading>
 }
+//protected
    if(!user){
 
     return <Navigate to="/login" state={{ from: location }} replace />;

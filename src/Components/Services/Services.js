@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Services.css'
 
 const Services = (props) => {
+  //destructure service
     const {id,name,image,price,description}=props.service;
     const navigate=useNavigate();
 
@@ -13,7 +14,7 @@ const Services = (props) => {
     return (
         <div>
             
-
+{/* service card */}
             <div className='service'>
             <div className="col  shadow-lg">
     <div className="">
@@ -21,10 +22,12 @@ const Services = (props) => {
             
       <img src={image}  className="card-img-top img-fluid img" alt="..."/>
    </div>
+
       <div className="p-2">
         <h5 className="">{name}</h5>
         <p className="">{description}</p>
         <p className="">{price}</p>
+        {/* checkout page go */}
     <button className='btn btn-dark border-warning' onClick={checkout}>Checkout</button>
 
       </div>

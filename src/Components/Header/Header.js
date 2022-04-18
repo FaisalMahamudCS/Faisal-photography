@@ -10,6 +10,7 @@ const Header = () => {
   const [user]=useAuthState(auth);
   const handleSignOut =()=>{
     signOut(auth);
+    //signout
   }
     return (
         <div>
@@ -45,6 +46,7 @@ const Header = () => {
           to='/service'
         >Service
             </NavLink>
+            {/* checking user */}
 
    {
      user ?

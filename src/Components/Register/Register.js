@@ -9,6 +9,7 @@ import auth from '../../firebase.init';
 const Register = () => {
     const emailRef=useRef('');
     const passwordRef=useRef('');
+    //error
     let registerError;
     const [
         createUserWithEmailAndPassword,
@@ -37,13 +38,13 @@ const Register = () => {
         
         await createUserWithEmailAndPassword(email, password);
         navigate('/');
-       
+       //navigate to home
     
     }
    
 
     return (
-        <div className='container mt-5 w-50 mx-auto card'>
+        <div className='container mt-5 col-lg-6 col-sm-12  mx-auto card'>
             
         <Form onSubmit={handleRegister} className='m-5'>
 <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -63,7 +64,7 @@ const Register = () => {
 Register
 </Button>
 </Form>
-
+{/* /go to login  */}
 <Link to='/login' className='btn btn-link text-dark pe-auto text-decoration-none '>Alrady have account? Login Now</Link>
     </div>
     );

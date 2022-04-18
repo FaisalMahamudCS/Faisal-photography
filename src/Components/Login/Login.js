@@ -53,7 +53,7 @@ if (error) {
         }
     }
     return (
-        <div className='container w-50 mx-auto  mt-5 card'>
+        <div className='container col-lg-6 col-sm-12  mx-auto  mt-5 card'>
             
             <Form onSubmit={handleSubmit} className='p-5'>
   <Form.Group className="mb-3" controlId="formBasicEmail">

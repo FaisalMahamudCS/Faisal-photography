@@ -3,7 +3,9 @@ import React from 'react';
 const Checkout = () => {
     return (
         <div>
-          <h2 className='text-center mt-5'>  Thanks for buying </h2>
+            {/* checkout */}
+           <h2 className='text-center mt-5'>  Thanks for buying </h2>
+       
       
         </div>
     );
