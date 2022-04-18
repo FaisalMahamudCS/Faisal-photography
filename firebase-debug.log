@@ -1,0 +1,71 @@
+[debug] [2022-04-18T13:39:46.398Z] ----------------------------------------------------------------------
+[debug] [2022-04-18T13:39:46.416Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-04-18T13:39:46.416Z] CLI Version:   10.6.0
+[debug] [2022-04-18T13:39:46.416Z] Platform:      win32
+[debug] [2022-04-18T13:39:46.416Z] Node Version:  v14.15.4
+[debug] [2022-04-18T13:39:46.509Z] Time:          Mon Apr 18 2022 19:39:46 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-04-18T13:39:46.509Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-18T13:39:46.694Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-18T13:39:46.695Z] > authorizing via signed-in user (fmfahim1202@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\web programming\faisal-photography
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2022-04-18T13:40:45.803Z] Error: kill ENOSYS
+    at process.kill (internal/process/per_thread.js:200:13)
+    at process.listener (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:95:15)
+    at process.emit (events.js:315:20)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-04-18T13:42:21.277Z] ----------------------------------------------------------------------
+[debug] [2022-04-18T13:42:21.282Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-04-18T13:42:21.282Z] CLI Version:   10.6.0
+[debug] [2022-04-18T13:42:21.282Z] Platform:      win32
+[debug] [2022-04-18T13:42:21.282Z] Node Version:  v14.15.4
+[debug] [2022-04-18T13:42:21.284Z] Time:          Mon Apr 18 2022 19:42:21 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-04-18T13:42:21.284Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-18T13:42:21.428Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-18T13:42:21.429Z] > authorizing via signed-in user (fmfahim1202@gmail.com)
+[debug] [2022-04-18T13:42:21.429Z] [iam] checking project fir-auth-photo for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-04-18T13:42:21.477Z] > refreshing access token with scopes: []
+[debug] [2022-04-18T13:42:21.478Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-18T13:42:21.822Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2022-04-18T13:42:21.822Z] > refreshing access token with scopes: []
+[debug] [2022-04-18T13:42:21.823Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-18T13:42:21.830Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2022-04-18T13:42:21.841Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:145:12)
+    at refreshTokens (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:485:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.getAccessToken (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:147:23)
+    at async Client.addAuthHeader (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:138:21)
+    at async Client.request (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:94:34)
+    at async getFirebaseProject (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async getDefaultHostingSite (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:73:9)
+    at async C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:188:17
+[error] 
+[error] Error: Failed to get Firebase project fir-auth-photo. Please make sure the project exists and your account has permission to access it.
