@@ -13,7 +13,7 @@ const Banner = () => {
   
     <img
       className="d-block w-100"
-      src="https://i.ibb.co/3kT7Nr4/277112099-1626443691066207-6979254937605219314-n.jpg"
+      src="https://i.ibb.co/ZN89M9L/banner-4.jpg"
       alt="First slide"
     />
     <Carousel.Caption>
