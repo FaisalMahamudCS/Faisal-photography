@@ -53,9 +53,9 @@ if (error) {
         }
     }
     return (
-        <div className='container w-25 mx-auto card'>
+        <div className='container w-50 mx-auto  mt-5 card'>
             
-            <Form onSubmit={handleSubmit}>
+            <Form onSubmit={handleSubmit} className='p-5'>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
     <Form.Control type="email" ref={emailRef} placeholder="Enter email"  required/>
@@ -74,8 +74,10 @@ if (error) {
   </Button>
 {errormsg}
 </Form>
+<div className='d-flex justify-content-center align-content-center'>
 <Link className='btn btn-link text-dark pe-auto text-decoration-none' to='/register'>New? Register Now</Link>
-<button className='btn btn-link text-dark pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button>
+<button className='btn btn-link text-dark pe-auto text-decoration-none ' onClick={resetPassword}>Reset Password</button>
+</div>
 <SocialLogin></SocialLogin>   
 <ToastContainer />
     

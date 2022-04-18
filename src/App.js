@@ -10,7 +10,7 @@ import Checkout from './Components/Checkout/Checkout';
 import NotFound from './Components/NotFound/NotFound';
 import About from './Components/About/About';
 import Blog from './Components/Blog/Blog';
-
+import Service from './Components/Service/Service';
 
 function App() {
   return (
@@ -30,6 +30,7 @@ function App() {
      <Route path='*' element={<NotFound></NotFound>}></Route>
      <Route path='/about' element={<About></About>}></Route>
     <Route path='/blog' element={<Blog></Blog>}></Route>
+    <Route path='/service' element={<Service></Service>}></Route>
       </Routes>
 
     </div>

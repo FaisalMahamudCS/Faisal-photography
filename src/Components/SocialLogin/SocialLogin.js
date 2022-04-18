@@ -14,7 +14,7 @@ const SocialLogin = () => {
         <div>
           <button
                     onClick={() => signInWithGoogle()}
-                    className='btn btn-dark w-25 d-block mx-auto my-2'>
+                    className='btn btn-dark border-warning w-25 d-block mx-auto my-2'>
                    
                     <span className='px-2'>Google Sign In </span>
                 </button>   
